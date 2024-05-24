@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: rgba(0, 51, 102, 0.8);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,10 +22,93 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  padding: 1rem 0;
+}
+
+.App-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.App-header h1 {
+  font-size: 1.5rem;
 }
 
 .App-link {
   color: #61dafb;
+}
+
+/* Estilo global */
+body {
+  min-height: 100vh;
+  color: #333;
+  background-image: url('../public/assets/Fotodefundo.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Estilos de container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#loginButton {
+  background-color: #0055a5;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#loginButton:hover {
+  background-color: #003366;
+}
+
+main {
+  flex: 1;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 50px 0;
+}
+
+section {
+  flex: 1;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8); /* Cor de fundo da seção com transparência */
+  border-radius: 8px;
+}
+
+section h2 {
+  margin-bottom: 20px;
+}
+
+section p {
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: rgba(0, 51, 102, 0.8);
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
 }
 
 @keyframes App-logo-spin {
