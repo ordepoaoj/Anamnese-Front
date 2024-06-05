@@ -7,6 +7,13 @@ function App() {
       <header className="App-header">
         <div className="container">
           <h1>Consultoria do Sono</h1>
+          <nav>
+            <ul className="nav-links">
+              <li><a href="#about">Sobre Nós</a></li>
+              <li><a href="#services">Serviços</a></li>
+              <li><a href="#contact-us">Contato</a></li>
+            </ul>
+          </nav>
           <button id="loginButton">Login</button>
         </div>
       </header>
@@ -31,6 +38,18 @@ function App() {
               </ul>
             </div>
           </section>
+
+          <section className="contact-us">
+            <div className="container">
+              <h2>Contate-Nos</h2>
+              <ul>
+                <li>Whatsapp: +55 (21) 98765-4321</li>
+                <li>E-mail: bvinovacoes@gmail.com</li>
+                <li>Horário de atendimento:</li>
+                <li>Segunda à Sexta de 9:00 às 18:00</li>
+              </ul>
+            </div>
+            </section>
         </div>
       </main>
       

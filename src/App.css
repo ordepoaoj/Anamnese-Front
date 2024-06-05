@@ -39,7 +39,6 @@
   color: #61dafb;
 }
 
-/* Estilo global */
 body {
   min-height: 100vh;
   color: #333;
@@ -48,13 +47,19 @@ body {
   background-position: center;
 }
 
-/* Estilos de container */
 .container {
   width: 90%;
   max-width: 1200px;
   margin: 0 auto;
 }
 
+.services {
+  min-height: 200px;
+}
+
+.about {
+  min-height: 200px; 
+}
 #loginButton {
   background-color: #0055a5;
   color: white;
@@ -82,7 +87,7 @@ main {
 section {
   flex: 1;
   padding: 20px;
-  background-color: rgba(255, 255, 255, 0.8); /* Cor de fundo da seção com transparência */
+  background-color: rgba(255, 255, 255, 0.8);
   border-radius: 8px;
 }
 
@@ -118,4 +123,26 @@ footer {
   to {
     transform: rotate(360deg);
   }
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin-right: 5px;
+}
+
+.nav-links li {
+  margin: 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #61dafb;
 }
