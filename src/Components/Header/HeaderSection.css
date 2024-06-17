@@ -1,0 +1,7 @@
+.Container-Title {
+    position: fixed; /* Torna o header fixo na tela */
+    top: 0;          /* Posiciona o header no topo */
+    left: 0;          /* Posiciona o header à esquerda */
+    width: 100%;       /* Ocupa a largura total da tela */
+    z-index: 10;       /* Garante que o header fique sobreposto a outros elementos */
+  }

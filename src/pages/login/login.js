@@ -10,7 +10,9 @@ import {
 }
 from 'mdb-react-ui-kit';
 
-function App() {
+console.log('AnamneseLogin ');
+
+function AnamneseLogin() {
   return (
     <MDBContainer fluid className="p-3 my-5">
 
@@ -56,4 +58,4 @@ function App() {
   );
 }
 
-export default App;
+export default AnamneseLogin;

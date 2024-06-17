@@ -20,7 +20,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
   padding: 1rem 0;
 }
@@ -48,8 +47,8 @@ body {
 }
 
 .container {
-  width: 90%;
-  max-width: 1200px;
+  width: 95%;
+  max-width: inherit;
   margin: 0 auto;
 }
 
@@ -130,6 +129,10 @@ footer {
   display: flex;
   gap: 1rem;
   margin-right: 5px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .nav-links li {
