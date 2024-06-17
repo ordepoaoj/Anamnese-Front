@@ -19,14 +19,14 @@ function AnamneseLogin() {
       <MDBRow>
 
         <MDBCol col='10' md='6'>
-          <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.svg" class="img-fluid" alt="Phone image" />
+          <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.svg" alt="Phone image" />
         </MDBCol>
 
         <MDBCol col='4' md='6'>
 
 
-          <MDBInput wrapperClass='mb-4' label='Email address' id='formControlLg' type='email' size="lg"/>
-          <MDBInput wrapperClass='mb-4' label='Password' id='formControlLg' type='password' size="lg"/>
+          <MDBInput wrapperClass='mb-4' label='Email' id='formControlLg' type='email' size="lg"/>
+          <MDBInput wrapperClass='mb-4' label='Senha 2' id='formControlLg' type='password' size="lg"/>
 
 
           <div className="d-flex justify-content-between mx-4 mb-4">
