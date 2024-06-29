@@ -1,0 +1,118 @@
+.register-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f9f9f9;
+  width: 800px;
+}
+
+.register-form-container {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  width: 100%;
+}
+
+.register-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.register-description {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.register-input {
+  margin-bottom: 20px;
+}
+
+.register-input label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.register-input input,
+.register-input select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.register-input input[type="text"],
+.register-input input[type="email"],
+.register-input input[type="password"],
+.register-input select {
+  height: 25px;
+}
+
+.register-button {
+  background-color: #1a73e8;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  display: block;
+  margin-top: 20px;
+}
+
+.register-button:hover {
+  background-color: #1558b0;
+}
+
+.register-social {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.register-social p {
+  font-size: 14px;
+  color: #666;
+}
+
+.register-social-buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.register-social-button {
+  background-color: transparent;
+  border: 1px solid #ccc;
+  color: #333;
+  padding: 10px 20px;
+  font-size: 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin: 0 5px;
+}
+
+.register-social-button.google {
+  border-color: #db4437;
+  color: #db4437;
+}
+
+.register-social-button.facebook {
+  border-color: #1877f2;
+  color: #1877f2;
+}
+
+.register-social-icon {
+  margin-right: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}

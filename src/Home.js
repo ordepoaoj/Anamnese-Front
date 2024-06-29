@@ -1,5 +1,6 @@
+import ContactForm from './Components/ContactForm/contactForm';
 import Contacts from './Components/ContactSection/contacts';
-import HeaderSection from './Components/Header/HeaderSection';
+import HeaderSection from './Components/Header/headerSection';
 import Footer from './Components/footer/footer';
 import './Home.css';
 
@@ -11,6 +12,7 @@ const Home = () => {
         <HeaderSection />
       <main>
         <Contacts />
+        <ContactForm />
       </main>
       <Footer />
     </div>

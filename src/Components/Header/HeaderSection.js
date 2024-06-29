@@ -1,5 +1,5 @@
 import React from "react";
-import './HeaderSection.css';
+import './headerSection.css';
 import AnamneseLogin from "../../pages/login/login";
 import { useNavigate } from "react-router-dom";
 

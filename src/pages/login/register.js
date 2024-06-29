@@ -1,94 +1,62 @@
 import React from 'react';
-import {
-  MDBBtn,
-  MDBContainer,
-  MDBRow,
-  MDBCol,
-  MDBCard,
-  MDBCardBody,
-  MDBInput,
-  MDBCheckbox,
-  MDBIcon
-}
-from 'mdb-react-ui-kit';
+import './register.css';
 
-function App() {
+const Register = () => {
   return (
-    <MDBContainer fluid className='p-4'>
-
-      <MDBRow>
-
-        <MDBCol md='6' className='text-center text-md-start d-flex flex-column justify-content-center'>
-
-          <h1 className="my-5 display-3 fw-bold ls-tight px-3">
-            The best offer <br />
-            <span className="text-primary">for your business</span>
-          </h1>
-
-          <p className='px-3' style={{color: 'hsl(217, 10%, 50.8%)'}}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Eveniet, itaque accusantium odio, soluta, corrupti aliquam
-            quibusdam tempora at cupiditate quis eum maiores libero
-            veritatis? Dicta facilis sint aliquid ipsum atque?
-          </p>
-
-        </MDBCol>
-
-        <MDBCol md='6'>
-
-          <MDBCard className='my-5'>
-            <MDBCardBody className='p-5'>
-
-              <MDBRow>
-                <MDBCol col='6'>
-                  <MDBInput wrapperClass='mb-4' label='First name' id='form1' type='text'/>
-                </MDBCol>
-
-                <MDBCol col='6'>
-                  <MDBInput wrapperClass='mb-4' label='Last name' id='form1' type='text'/>
-                </MDBCol>
-              </MDBRow>
-
-              <MDBInput wrapperClass='mb-4' label='Email' id='form1' type='email'/>
-              <MDBInput wrapperClass='mb-4' label='Password' id='form1' type='password'/>
-
-              <div className='d-flex justify-content-center mb-4'>
-                <MDBCheckbox name='flexCheck' value='' id='flexCheckDefault' label='Subscribe to our newsletter' />
-              </div>
-
-              <MDBBtn className='w-100 mb-4' size='md'>sign up</MDBBtn>
-
-              <div className="text-center">
-
-                <p>or sign up with:</p>
-
-                <MDBBtn tag='a' color='none' className='mx-3' style={{ color: '#1266f1' }}>
-                  <MDBIcon fab icon='facebook-f' size="sm"/>
-                </MDBBtn>
-
-                <MDBBtn tag='a' color='none' className='mx-3' style={{ color: '#1266f1' }}>
-                  <MDBIcon fab icon='twitter' size="sm"/>
-                </MDBBtn>
-
-                <MDBBtn tag='a' color='none' className='mx-3' style={{ color: '#1266f1' }}>
-                  <MDBIcon fab icon='google' size="sm"/>
-                </MDBBtn>
-
-                <MDBBtn tag='a' color='none' className='mx-3' style={{ color: '#1266f1' }}>
-                  <MDBIcon fab icon='github' size="sm"/>
-                </MDBBtn>
-
-              </div>
-
-            </MDBCardBody>
-          </MDBCard>
-
-        </MDBCol>
-
-      </MDBRow>
-
-    </MDBContainer>
+    <div className="register-container">
+      <div className="register-form-container">
+        <h1 className="register-title">Registre-se</h1>
+        <p className="register-description">Preencha o formulário abaixo para criar sua conta.</p>
+        <form>
+          <div className="register-input">
+            <label htmlFor="name">Nome</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div className="register-input">
+            <label htmlFor="birthdate">Data de Nascimento</label>
+            <input type="date" id="birthdate" name="birthdate" placeholder="dd/mm/aaaa" required />
+          </div>
+          <div className="register-input">
+            <label htmlFor="cpf">CPF</label>
+            <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" required />
+          </div>
+          <div className="register-input">
+            <label htmlFor="gender">Sexo</label>
+            <select id="gender" name="gender" required>
+              <option value="">Selecione...</option>
+              <option value="male">Masculino</option>
+              <option value="female">Feminino</option>
+              <option value="other">Prefiro não dizer</option>
+            </select>
+          </div>
+          <div className="register-input">
+            <label htmlFor="email">E-mail</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div className="register-input">
+            <label htmlFor="confirmEmail">Confirmar E-mail</label>
+            <input type="email" id="confirmEmail" name="confirmEmail" required />
+          </div>
+          <div className="register-input">
+            <label htmlFor="password">Senha</label>
+            <input type="password" id="password" name="password" required />
+          </div>
+          <button type="submit" className="register-button">Registrar</button>
+        </form>
+        <div className="register-social">
+          <p>ou registre-se com:</p>
+          <div className="register-social-buttons">
+            <button className="register-social-button google">
+              <span className="register-social-icon">G</span> Google
+            </button>
+            <button className="register-social-button facebook">
+              <span className="register-social-icon">F</span> Facebook
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
   );
-}
+};
 
-export default App;
+export default Register;
